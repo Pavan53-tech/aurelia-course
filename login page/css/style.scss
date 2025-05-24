@@ -1,0 +1,84 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-slogo.pngerif;
+  background: url('../image/logo.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  height: 100%;
+  position: relative;
+
+  .login {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      margin-bottom: 15px;
+
+      input[type="checkbox"] {
+        margin-right: 5px;
+      }
+    }
+
+    .forgot {
+      text-decoration: none;
+      color: #2193b0;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #2193b0;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+
+      &:hover {
+        background-color: #1b7fa6;
+      }
+    }
+  }
+}
